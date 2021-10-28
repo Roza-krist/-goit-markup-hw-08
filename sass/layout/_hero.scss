@@ -5,20 +5,20 @@
     margin-right: auto;
     @include bg();
     background-color: #212121;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../pictures/hero-mob.jpg);
-    @media (-webkit-min-device-pixel-ratio: 2),
-      (-o-min-device-pixel-ratio: 2/1),
-      (min-resolution: 2dppx) {
-      background-image: url(../pictures/hero-mob@2x.jpg);
-    }
 
     @media screen and (max-width: 767px) {
       max-width: 480px;
       height: 400px;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../pictures/hero-mob.jpg);
+      @media (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
+        (min-resolution: 2dppx) {
+        background-image: url(../pictures/hero-mob@2x.jpg);
+      }
     }
     @media screen and (max-width: 1199px) {
       max-width: 768px;
