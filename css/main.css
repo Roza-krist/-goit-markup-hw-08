@@ -520,7 +520,7 @@ img {
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2 / 1), (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: url(../pictures/hero-mob@2x.png);
+    background-image: url(../pictures/hero-mob@2x.jpg);
   }
 }
 
