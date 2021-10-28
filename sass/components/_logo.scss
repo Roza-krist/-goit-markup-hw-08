@@ -1,0 +1,21 @@
+.logo {
+  font-family: Raleway;
+  color: var(--main-color);
+
+  @media screen and (max-width: 1199px) {
+    @include font(24px, 700, 1.16, 0.03em);
+  }
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1199px) {
+    @include font(26px, 700, 1.2, 0.03em);
+    margin-right: 85px;
+  }
+}
+.logo__web {
+  color: var(--accent-color);
+}

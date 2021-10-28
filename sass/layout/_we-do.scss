@@ -1,0 +1,39 @@
+.section__we-do {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.container__main-title {
+  margin-top: 0;
+  text-align: center;
+  @media screen and (max-width: 1199px) {
+    @include font(28px, 700, 1.17, 0.03em);
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include font(36px, 700, 1.16, 0.03em);
+  }
+}
+.card-set__we-do-item {
+  position: relative;
+  margin-right: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+.card-set__we-do-subtitle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  display: block;
+  @include font(14px, 700, 1.14, 0.03em);
+  text-transform: uppercase;
+
+  text-align: center;
+  justify-content: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: var(--main-bg-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

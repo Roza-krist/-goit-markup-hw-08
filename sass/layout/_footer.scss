@@ -1,0 +1,125 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--foot-bg-color);
+}
+.container--foot-flex {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    @include display(flex, baseline);
+  }
+}
+.logo--foot {
+  color: var(--main-bg-color);
+}
+.foot-contacts {
+  margin-top: 20px;
+  &__item:not(:first-child) {
+    margin-top: 9px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+.foot-contacts__link {
+  @include font(14px, 400, 1.46, 0.03em);
+  font-style: normal;
+  font-family: Roboto;
+  color: var(--main-bg-color);
+}
+.foot-contacts__link--rgba {
+  color: rgba(255, 255, 255, 0.6);
+}
+.join {
+  margin-left: auto;
+  margin-right: auto;
+  &__title {
+    color: var(--main-bg-color);
+    text-transform: uppercase;
+    @include font(14px, 700, 1.14, 0.03em);
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+}
+.social-list__link--join-us {
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover,
+  .social-list__link--join-us:focus {
+    background-color: var(--accent-color);
+  }
+}
+.social-list__icon--svg {
+  fill: var(--main-bg-color);
+}
+.join__flex {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.join__mailing {
+  height: 50px;
+  padding: 10px;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--main-bg-color);
+  &::placeholder {
+    @include font(16px, 400, 1.25, 0.03em);
+    padding-left: 10px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+.btn__foot {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 25px;
+  @include display();
+  @include font(16px, 700, 1.6, 0.06em);
+  justify-content: center;
+  @media screen and (max-width: 1169px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1170px) {
+    margin-left: 12px;
+  }
+}
+.btn__mailing-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--main-bg-color);
+  margin-left: 10px;
+}

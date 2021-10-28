@@ -1,0 +1,80 @@
+.card-set {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__feat-item {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1199px) {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+  }
+}
+.card-set__title {
+  @include font(14px, 700, 1.14, 0.03em);
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+.card-set__feat-text {
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: var(--text-color);
+  @include font(14px, 400, 1.7, 0.03em);
+}
+.card-set__feat-item {
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    height: 120px;
+    background-position: center;
+    display: block;
+    background-color: var(--bg-color);
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+  }
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.container__svg-set {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-set__feat-item--antenna::before {
+  background-size: 70px;
+  background-image: url(../pictures/antenna.svg);
+}
+.card-set__feat-item--clock::before {
+  background-size: 70px;
+  background-image: url(../pictures/clock.svg);
+}
+.card-set__feat-item--diagram::before {
+  background-size: 70px;
+  background-image: url(../pictures/diagram.svg);
+}
+.card-set__feat-item--astronaut::before {
+  background-size: 70px;
+  background-image: url(../pictures/astronaut.svg);
+}
