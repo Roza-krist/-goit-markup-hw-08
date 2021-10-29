@@ -9,13 +9,12 @@
 
   transition: opacity 250ms var(--transition-bezier),
     transform 250ms var(--transition-bezier);
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    max-width: 528px;
-  }
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  max-width: 528px;
 }
 
 .form {

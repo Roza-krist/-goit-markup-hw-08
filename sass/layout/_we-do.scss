@@ -16,6 +16,11 @@
     @include font(36px, 700, 1.16, 0.03em);
   }
 }
+.card-set--we-do {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
 .card-set__we-do-item {
   position: relative;
   margin-right: 30px;

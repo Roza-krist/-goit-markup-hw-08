@@ -606,7 +606,14 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .card-set {
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .card-set__feat-item {
+    margin-bottom: 30px;
     flex-basis: calc((100% - 30px) / 2);
   }
 }
@@ -731,6 +738,12 @@ img {
     line-height: 1.16;
     letter-spacing: 0.03em;
   }
+}
+
+.card-set--we-do {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
 }
 
 .card-set__we-do-item {
@@ -1179,16 +1192,11 @@ img {
   background-color: var(--main-bg-color);
   box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14), 3px 0px 1px rgba(0, 0, 0, 0.12);
   transition: opacity 250ms var(--transition-bezier), transform 250ms var(--transition-bezier);
-}
-
-@media screen and (min-width: 768px) {
-  .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    max-width: 528px;
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  max-width: 528px;
 }
 
 .form {
@@ -1391,6 +1399,12 @@ img {
 @media screen and (min-width: 768px) {
   .btn-list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-list {
     margin-bottom: 50px;
   }
 }
@@ -1430,12 +1444,6 @@ img {
   display: flex;
   padding-top: 0;
   justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-  .container__portfolio {
-    padding-bottom: 60px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
